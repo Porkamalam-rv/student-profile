@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Portal - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="college-header">
+        <img src="images/logo.PNG" alt="College Logo" class="college-logo">
+        <div class="header-text">
+            <h1>V.V.VANNIAPERUMAL COLLEGE FOR WOMEN</h1>
+            <p>
+                (Belonging to Virudhunagar Hindu Nadars)<br>
+                An Autonomous Institution affiliated to Madurai Kamaraj University<br>
+                Re-accredited with 'A++' Grade (4th Cycle) by NAAC<br>
+                Virudhunagar-626 001
+            </p>
+        </div>
+        <button onclick="window.location.href='profile.html'" class="nav-btn">View Profiles</button>
+    </header>
+
+    <main class="main-content">
+        <div class="input-section">
+            <h2>Create Student Profile</h2>
+            <input type="text" id="stuName" placeholder="Student Name">
+            <input type="text" id="stuRoll" placeholder="Roll Number">
+            <input type="text" id="stuDept" placeholder="Department">
+            <button class="gen-btn" onclick="generateAndRedirect()">Generate Profile</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
