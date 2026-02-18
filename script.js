@@ -14,7 +14,7 @@ function generateAndRedirect() {
         alert("Profile Created Successfully!");
         window.location.href = "profile.html";
     } else {
-        alert("Ella details-aiyum fill pannunga!");
+        alert("Fill All The Required Details!");
     }
 }
 
@@ -47,4 +47,5 @@ function deleteProfile(index) {
         localStorage.setItem("allStudents", JSON.stringify(students));
         displayProfiles();
     }
+
 }
