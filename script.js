@@ -14,7 +14,7 @@ function generateAndRedirect() {
         alert("Profile Created Successfully!");
         window.location.href = "profile.html";
     } else {
-        alert("Ella details-aiyum fill pannunga!");
+        alert("Fill All The Details Required!");
     }
 }
 
@@ -41,10 +41,11 @@ function displayProfiles() {
 
 // Delete profile
 function deleteProfile(index) {
-    if(confirm("Kandippa delete panna poringala?")) {
+    if(confirm("Do You Want To Delete?")) {
         let students = JSON.parse(localStorage.getItem("allStudents") || "[]");
         students.splice(index, 1);
         localStorage.setItem("allStudents", JSON.stringify(students));
         displayProfiles();
     }
+
 }
